@@ -1,0 +1,13 @@
+a=4; b=2; x=5; y=4;
+result=5*b*b*x-3*a*y*y-8*b*b*x+10*a*y
+
+
+Step 1:-first we perform the mutiplication
+          we get
+	result=100-192-160+160
+Step 2:-first we perform the addition
+          we get
+	result=100-192-0
+Step 3:-first we perform the substraction
+          we get
+	result=-92

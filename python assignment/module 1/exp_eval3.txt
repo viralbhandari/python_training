@@ -1,0 +1,14 @@
+a=2; y=3; c=7;
+calc= 4*a*y/c-a*y/c
+
+Step 1:-first we perform the division
+          we get
+	calc= 4*a*0.428-a*0.428
+
+Step 2:-first we perform the multiplication
+          we get
+	calc= 3.424-0.856
+
+Step 3:-first we perform the division
+          we get
+	calc= 2.57

@@ -1,0 +1,15 @@
+a=4*3/4+4/4+8-2+5/8
+
+Step 1:- first we perfom the division 
+          we get
+	a=4*.75+1+8-2+0.625
+
+Step 2:- then we prform the mutiplication
+          we get
+	a=3+1+8-2+0.625
+Step 3:- then we prform the addition
+          we get
+	a=12.625-2
+Step 4:- then we prform the substraction
+          we get
+	a=10.625

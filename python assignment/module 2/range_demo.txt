@@ -1,0 +1,29 @@
+OUTPUT:-
+i love to program!
+i love to program!
+i love to program!
+i love to program!
+i love to program!
+i love to program!
+
+OUTPUT:-
+2
+3
+4
+5
+
+OUTPUT:-
+10
+9
+8
+7
+6
+
+OUTPUT:-
+0
+100
+200
+300
+400
+500
+
