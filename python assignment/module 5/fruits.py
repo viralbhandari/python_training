@@ -1,24 +1,46 @@
-fruit={'apple':{'binomial_name':'malus domestica','major_producer':['china,US,Turkey'],
-                'nutrition':{'carbohydrates':'13.81g','fat':'0.17g','protein':'0.26g'}},
-       'banana':{'binomial_name':'musa','major_producer':['china,INDIA,Turkey'],
-                'nutrition':{'carbohydrates':'17.81g','fat':'3.17g','protein':'1.26g'}},
-       'guava':{'binomial_name':'Psidium guajava','major_producer':['china,INDIA,sri lanka'],
-                'nutrition':{'carbohydrates':'11.81g','fat':'2.17g','protein':'1.10g'}}}
-l1=[fruit['apple']['nutrition']['carbohydrates'],
-    fruit['banana']['nutrition']['carbohydrates'],
-    fruit['guava']['nutrition']['carbohydrates']]
-print('maximum carbohydrates =',max(l1))
-
-l2=[fruit['apple']['nutrition']['fat'],
-    fruit['banana']['nutrition']['fat'],
-    fruit['guava']['nutrition']['fat']]
-print('maximum fat =',max(l2))
-
-l3=[fruit['apple']['nutrition']['protein'],
-    fruit['banana']['nutrition']['protein'],
-    fruit['guava']['nutrition']['protein']]
-print('maximum protein =',max(l3))
-
-
-
+def carbohydrate():
+    m=0
+  
+    for i in fruits:
+        
+        for j in fruits[i]:
+            if j=='nutrition':
+                for k in fruits[i][j]:
+                    if k=='Carbohydrate' :
+                        if m<float(fruits[i][j][k]):
+                            m=float(fruits[i][j][k])
+                            name=i
+    print('Name of fruit of highest carbohydrate value\n',name)
+    print('Carbohydrate',m)
+l=[]
+def protein_china():
+    m=0
+    for i in fruits:
+       
+        for j in fruits[i]:
+            if j=='producer':
+               
+                if 'china' in fruits[i][j]:
+                    l.append(i)
+            for k in fruits[i][j]:
+                if i in l:
+                    if k=='protein' :
+                        if m<float(fruits[i][j][k]):
+                            m=float(fruits[i][j][k])
+                            name=i
+    print('Name of fruit having highest protein values produced by china\n',name)
+    print('Protein',m)
+    
+                    
+            
+fruits={'Apple': {'binomial name ': 'malus Domestica', 'producer': ['china', 'unitedState', 'Turkey'], 'nutrition': {'Carbohydrate': '13.81', 'Fat': '0.17', 'protein': '0.4'}}, 'Mango': {'binomial name ': 'mangus', 'producer': ['pakistan', 'india'], 'nutrition': {'Carbohydrate': '14', 'Fat': '0.20', 'protein': '0.13'}},'Orange': {'binomial name ': 'orgus', 'producer': ['china', 'India', 'Turkey'], 'nutrition': {'Carbohydrate': '13.81', 'Fat': '0.17', 'protein': '0.30'}}}
+''' fruits={}
+n=int(input('Enter the no.of Fruits'))
+for i in range(n):
+    fruits[input('name of fruit')]={'binomial name ':input('Binomial name'),'producer':input('Enter the major producers').split(' '),'nutrition':{'Carbohydrate':input('Carbohydrate in fruit'),'Fat':input('Fat in fruit'),'protein':input('protein in fruit')}}
+    
+print(fruits)
+'''   
+carbohydrate()
+protein_china()
 
