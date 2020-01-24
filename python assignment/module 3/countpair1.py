@@ -1,11 +1,10 @@
-arr=list(input("enter the array").split(" "))
-print(arr)
-p=list(map(int,arr))
-n= len(arr)
-sum1=6
-s=set()
-for i in range(0,n):
-    temp=sum1-p[i]
-    if (temp in s):
-         print("pairs with given sum are:"+str(sum1)+"is("+str(arr[i])+","+str(temp)+ s.add(arr[i]))
+l=list(map(int,input('Enter the elements of Array').split(' ')))
+s=int(input('Enter the Sum'))
+count=0
+for i in range(len(l)):
+    for j in range(i+1,len(l)):
+        if l[i]+l[j]==s:
+            print(l[i],l[j])
+            count+=1
+
          
